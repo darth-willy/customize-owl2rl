@@ -21,7 +21,7 @@
 config = {
 
 	webService : {
-		url : "http://localhost:8080/customize-owl2rl/",
+		url : "http://localhost:8080/Customize_OWL2RL/",
 		timeout : 120000
 	}
 };

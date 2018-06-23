@@ -79,7 +79,7 @@ defaultSelect(selections, {
 //
 ////get pre-processed rules from web service
 //
-//preprocess("auxilliary", {	
+//preprocess("instantiate", {	
 //	rules : rules,
 //	
 //	ontology : {
