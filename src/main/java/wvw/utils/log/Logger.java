@@ -41,7 +41,6 @@ public abstract class Logger {
 	private int loggerType;
 
 	static {
-		instances.put(FileLogger.TYPE, new FileLogger());
 	}
 
 	public static Logger getLogger() {
