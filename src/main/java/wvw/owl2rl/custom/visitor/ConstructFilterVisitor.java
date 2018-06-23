@@ -29,7 +29,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import wvw.owl2rl.convert.ConvertException;
 import wvw.utils.RDFUtils;
 
-public abstract class SPINFilterVisitor {
+public abstract class ConstructFilterVisitor {
 
 	public abstract String visit(RDFNode node) throws ConvertException;
 

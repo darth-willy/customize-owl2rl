@@ -36,7 +36,7 @@ import org.topbraid.spin.model.Union;
 import org.topbraid.spin.model.Values;
 import org.topbraid.spin.model.visitor.ElementVisitor;
 
-public abstract class SPINVisitor implements ElementVisitor {
+public abstract class ConstructVisitor implements ElementVisitor {
 
 	protected Exception exc;
 	

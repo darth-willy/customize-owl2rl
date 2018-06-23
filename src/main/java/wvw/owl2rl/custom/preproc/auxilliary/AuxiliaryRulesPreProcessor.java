@@ -38,7 +38,7 @@ public class AuxiliaryRulesPreProcessor extends PreProcessor {
 	public PreProcessResults doPreprocess(PreProcessConfig config) throws PreProcessException {
 
 		try {
-			String auxRules = res.getContents(rootPath + "auxilliary/rules.spin");
+			String auxRules = res.getContents(rootPath + "auxilliary/rules.sparql");
 			String rules = config.getRules() + "\n\n" + auxRules;
 			
 			return new PreProcessResults(rules);

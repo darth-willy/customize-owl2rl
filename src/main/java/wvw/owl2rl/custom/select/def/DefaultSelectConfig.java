@@ -25,7 +25,7 @@ import java.util.List;
 
 import wvw.owl2rl.convert.ConvertConfig;
 import wvw.owl2rl.convert.ConvertException;
-import wvw.owl2rl.convert.spin.rulestr.SPIN2RuleStr;
+import wvw.owl2rl.convert.construct.rulestr.Construct2RuleStr;
 import wvw.owl2rl.custom.select.SelectConfig;
 import wvw.owl2rl.custom.select.def.Selection.InitSelection;
 import wvw.owl2rl.custom.select.domain.rule.IRule;
@@ -87,7 +87,7 @@ public class DefaultSelectConfig implements SelectConfig {
 			return null;
 
 		try {
-			SPIN2RuleStr conv = new SPIN2RuleStr();
+			Construct2RuleStr conv = new Construct2RuleStr();
 			List<IRule> result = (List) conv.convertRules(rules, new ConvertConfig(false));
 
 			return result;

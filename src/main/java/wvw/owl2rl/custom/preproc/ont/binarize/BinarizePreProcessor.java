@@ -52,7 +52,7 @@ public class BinarizePreProcessor extends OntologyBasedPreProcessor {
 		try {
 			String binOntology = binarizeOntology(ontology.getContent(), ontology.getSyntax());
 
-			String binRules = res.getContents(rootPath + "binarize/rules.spin");
+			String binRules = res.getContents(rootPath + "binarize/rules.sparql");
 			String rules = config.getRules() + "\n\n" + binRules;
 			
 			return new PreProcessResults(rules, binOntology);

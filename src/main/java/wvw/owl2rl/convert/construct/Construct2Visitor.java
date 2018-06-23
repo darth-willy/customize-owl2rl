@@ -17,15 +17,15 @@
  * @author wvw
  * 
  */
-package wvw.owl2rl.convert.spin;
+package wvw.owl2rl.convert.construct;
 
-import wvw.owl2rl.custom.visitor.SPINVisitor;
+import wvw.owl2rl.custom.visitor.ConstructVisitor;
 
-public abstract class SPIN2Visitor extends SPINVisitor {
+public abstract class Construct2Visitor extends ConstructVisitor {
 
-	protected SPIN2 converter;
+	protected Construct2 converter;
 
-	public SPIN2Visitor(SPIN2 converter) {
+	public Construct2Visitor(Construct2 converter) {
 		this.converter = converter;
 	}
 }

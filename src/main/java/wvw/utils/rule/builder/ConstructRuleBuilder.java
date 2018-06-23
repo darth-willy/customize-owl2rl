@@ -20,12 +20,12 @@
 
 package wvw.utils.rule.builder;
 
-public class SpinRuleBuilder extends RuleBuilder {
+public class ConstructRuleBuilder extends RuleBuilder {
 
-	public SpinRuleBuilder() {
+	public ConstructRuleBuilder() {
 	}
 
-	public SpinRuleBuilder(String id) {
+	public ConstructRuleBuilder(String id) {
 		super(id);
 	}
 

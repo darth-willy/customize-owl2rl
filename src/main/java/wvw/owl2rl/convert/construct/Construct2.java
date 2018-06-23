@@ -17,7 +17,7 @@
  * @author wvw
  * 
  */
-package wvw.owl2rl.convert.spin;
+package wvw.owl2rl.convert.construct;
 
 import java.util.List;
 
@@ -26,9 +26,9 @@ import org.topbraid.spin.model.Construct;
 import wvw.owl2rl.convert.ConvertException;
 import wvw.owl2rl.convert.RuleConverter;
 
-public abstract class SPIN2 extends RuleConverter {
+public abstract class Construct2 extends RuleConverter {
 
-	public SPIN2(String id) {
+	public Construct2(String id) {
 		super(id);
 	}
 

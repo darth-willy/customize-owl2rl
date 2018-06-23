@@ -25,8 +25,8 @@ import java.util.List;
 
 import wvw.owl2rl.convert.ConvertConfig;
 import wvw.owl2rl.convert.ConvertException;
-import wvw.owl2rl.convert.spin.sel.SPIN2AddedRule;
-import wvw.owl2rl.convert.spin.sel.SPIN2ReplacementRule;
+import wvw.owl2rl.convert.construct.sel.Construct2AddedRule;
+import wvw.owl2rl.convert.construct.sel.Construct2ReplacementRule;
 import wvw.utils.SplitUtils;
 
 public class Selection {
@@ -116,7 +116,7 @@ public class Selection {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private List<AddedRule> parseAddedRules(String rules) {
 		try {
-			SPIN2AddedRule conv = new SPIN2AddedRule();
+			Construct2AddedRule conv = new Construct2AddedRule();
 			List<AddedRule> result = (List) conv.convertRules(rules,
 					new ConvertConfig(false));
 
@@ -142,7 +142,7 @@ public class Selection {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private List<ReplacementRule> parseReplacementRules(String rules) {
 		try {
-			SPIN2ReplacementRule conv = new SPIN2ReplacementRule();
+			Construct2ReplacementRule conv = new Construct2ReplacementRule();
 			List<ReplacementRule> result = (List) conv.convertRules(rules,
 					new ConvertConfig(false));
 

@@ -50,7 +50,7 @@ import wvw.utils.rdf.RdfGen;
 import wvw.utils.rule.RuleWrapper;
 import wvw.utils.rule.RulesUtils;
 import wvw.utils.rule.builder.RuleBuilder;
-import wvw.utils.rule.builder.SpinRuleBuilder;
+import wvw.utils.rule.builder.ConstructRuleBuilder;
 
 public class InstantiateRulesPreProcessor extends OntologyBasedPreProcessor {
 
@@ -67,7 +67,7 @@ public class InstantiateRulesPreProcessor extends OntologyBasedPreProcessor {
 			Model m = loadModel(ontology.getContent(), ontology.getSyntax());
 			initMap();
 
-			List<RuleWrapper> parsedRules = RulesUtils.splitRules(res.getContents(rootPath + "instantiate/rules.spin"));
+			List<RuleWrapper> parsedRules = RulesUtils.splitRules(res.getContents(rootPath + "instantiate/rules.sparql"));
 			// Log.d("rules: " + rules);
 
 			List<RuleWrapper> processed = new ArrayList<RuleWrapper>();
@@ -159,7 +159,7 @@ public class InstantiateRulesPreProcessor extends OntologyBasedPreProcessor {
 	}
 
 	private RuleBuilder toRuleBuilder(RuleWrapper rule, int idx) {
-		return new SpinRuleBuilder(rule.getComment().substring(2) + "-" + idx);
+		return new ConstructRuleBuilder(rule.getComment().substring(2) + "-" + idx);
 	}
 
 	private RuleWrapper toRuleWrapper(RuleBuilder r) {

@@ -18,7 +18,7 @@
 * 
 */
 
-package wvw.owl2rl.convert.spin.sel;
+package wvw.owl2rl.convert.construct.sel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,15 +27,15 @@ import org.topbraid.spin.model.Construct;
 
 import wvw.owl2rl.convert.ConvertConfig;
 import wvw.owl2rl.convert.ConvertException;
-import wvw.owl2rl.convert.spin.SPIN2;
+import wvw.owl2rl.convert.construct.Construct2;
 import wvw.owl2rl.custom.select.def.AddedRule;
 import wvw.utils.rule.RuleWrapper;
 import wvw.utils.rule.RulesUtils;
 
-public class SPIN2AddedRule extends SPIN2 {
+public class Construct2AddedRule extends Construct2 {
 
-	public SPIN2AddedRule() {
-		super("SPIN2AddedRule");
+	public Construct2AddedRule() {
+		super("Construct2AddedRule");
 	}
 
 	public Object convertRules(String rulesStr, ConvertConfig config)

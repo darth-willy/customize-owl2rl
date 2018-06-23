@@ -30,7 +30,7 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 import wvw.owl2rl.convert.ConvertException;
 import wvw.utils.RDFUtils;
 
-public class SPINDefaultFilterVisitor extends SPINFilterVisitor {
+public class ConstructDefaultFilterVisitor extends ConstructFilterVisitor {
 
 	protected static Map<String, String> primMap = new HashMap<String, String>();
 	protected static Map<String, String> connMap = new HashMap<String, String>();

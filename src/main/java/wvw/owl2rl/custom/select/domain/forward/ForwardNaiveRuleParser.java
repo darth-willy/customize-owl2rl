@@ -24,7 +24,7 @@ import java.util.List;
 
 import wvw.owl2rl.convert.ConvertConfig;
 import wvw.owl2rl.convert.ConvertException;
-import wvw.owl2rl.convert.spin.rulestr.SPIN2RuleStr;
+import wvw.owl2rl.convert.construct.rulestr.Construct2RuleStr;
 import wvw.owl2rl.custom.select.domain.rule.IRule;
 import wvw.owl2rl.custom.select.domain.rule.IRuleParser;
 import wvw.owl2rl.custom.select.domain.rule.IRuleset;
@@ -39,7 +39,7 @@ public class ForwardNaiveRuleParser implements IRuleParser {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public IRuleset parse(String rulesStr) throws RuleParseException {
 		try {
-			SPIN2RuleStr conv = new SPIN2RuleStr();
+			Construct2RuleStr conv = new Construct2RuleStr();
 			List<IRule> result = (List) conv.convertRules(rulesStr, new ConvertConfig(false));
 
 			return new RulesetList(result);

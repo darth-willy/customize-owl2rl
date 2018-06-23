@@ -21,7 +21,7 @@
 // - default selection
 
 // load required data
-var rules = read("res/owl/owl2rl/full/rules.spin");
+var rules = read("res/owl/owl2rl/full/rules.sparql");
 var axioms = read("res/owl/owl2rl/full/axioms.nt");
 
 // choose any combination of selections
@@ -43,7 +43,7 @@ defaultSelect(selections, {
 // - domain-based selection
 
 //// load required data
-//var rules = read("res/owl/owl2rl/full/rules.spin");
+//var rules = read("res/owl/owl2rl/full/rules.sparql");
 //var axioms = read("res/owl/owl2rl/full/axioms.nt");
 //
 //var ontology = read("res/owl/ontology/example2.nt");
@@ -72,7 +72,7 @@ defaultSelect(selections, {
 //// (binarize, instantiate: require an input ontology)
 //
 //// load rules
-//var rules = read("res/owl/owl2rl/full/rules.spin");
+//var rules = read("res/owl/owl2rl/full/rules.sparql");
 //
 //// load ontology (if needed)
 //var ontology = read("res/owl/ontology/example.nt");

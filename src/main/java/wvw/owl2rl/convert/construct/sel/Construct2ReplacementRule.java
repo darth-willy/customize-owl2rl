@@ -18,7 +18,7 @@
  * 
  */
 
-package wvw.owl2rl.convert.spin.sel;
+package wvw.owl2rl.convert.construct.sel;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,15 +28,15 @@ import org.topbraid.spin.model.Construct;
 
 import wvw.owl2rl.convert.ConvertConfig;
 import wvw.owl2rl.convert.ConvertException;
-import wvw.owl2rl.convert.spin.SPIN2;
+import wvw.owl2rl.convert.construct.Construct2;
 import wvw.owl2rl.custom.select.def.ReplacementRule;
 import wvw.utils.rule.RuleWrapper;
 import wvw.utils.rule.RulesUtils;
 
-public class SPIN2ReplacementRule extends SPIN2 {
+public class Construct2ReplacementRule extends Construct2 {
 
-	public SPIN2ReplacementRule() {
-		super("SPIN2ReplacementRule");
+	public Construct2ReplacementRule() {
+		super("Construct2ReplacementRule");
 	}
 
 	public Object convertRules(String rulesStr, ConvertConfig config)
